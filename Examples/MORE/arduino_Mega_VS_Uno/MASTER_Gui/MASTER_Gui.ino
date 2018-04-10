@@ -1,5 +1,11 @@
 
 
+//http://arduino.vn
+//https://github.com/NickChungVietNam/transmit_class
+// xem hướng dẫn trong tài liệu kèm theo
+
+
+
 #include "TRANSMIT_CLASS.h"
 
 ////////// CODE NÀY DÀNH CHO ARDUINO MEGA , xuất 2 gói tin ra 2 cổng TX0 và TX1

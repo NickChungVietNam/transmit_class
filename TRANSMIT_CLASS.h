@@ -4,6 +4,11 @@
  // Người viết : Phùng Thái Sơn -phungthaison96@gmail.com
 //http://github.com/NickChungVietNam/
 //http://arduino.vn/users/nick-chung/
+//https://github.com/NickChungVietNam/transmit_class
+// xem hướng dẫn trong tài liệu kèm theo
+
+
+
 // hoàn thiện : ngày 10/4/2018
 
 

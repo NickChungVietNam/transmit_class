@@ -1,5 +1,11 @@
 
 
+//http://arduino.vn
+//https://github.com/NickChungVietNam/transmit_class
+// xem hướng dẫn trong tài liệu kèm theo
+
+
+
 
 // ứng dụng  Hàm .GET_BINARY_ARRAY() : dành cho nhận dữ liệu nhị phân bất kỳ
 // vào truyền string

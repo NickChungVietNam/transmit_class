@@ -1,4 +1,9 @@
 
+//http://arduino.vn
+//https://github.com/NickChungVietNam/transmit_class
+// xem hướng dẫn trong tài liệu kèm theo
+
+
 
 // 2 arduino nói chuyện với nhau (gửi và lắng nghe cùng lúc)
 /// Code của 2 arduino giống hệt nhau

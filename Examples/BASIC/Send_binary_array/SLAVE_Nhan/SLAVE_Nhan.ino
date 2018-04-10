@@ -1,4 +1,10 @@
 
+//http://arduino.vn
+//https://github.com/NickChungVietNam/transmit_class
+// xem hướng dẫn trong tài liệu kèm theo
+
+
+
 
 #include "TRANSMIT_CLASS.h"
 //Truyền 1 hàm đọc 1 byte dữ liệu 
@@ -101,7 +107,7 @@ void loop() {
 // Tên gói tin giống với gói gửi ("abc")
 // số lượng biến liệt kê bằng với số lượng của gói gửi (4)
 
-// kiểu dữ liệu của mảng bắt buộc 1 byte uin8_t  (khi dùng để nhận dạng binary)
+// kiểu dữ liệu của mảng bắt buộc  uint8_t  (khi dùng để nhận dạng binary)
 
 //timeout là thời gian đợi lâu nhất 
 

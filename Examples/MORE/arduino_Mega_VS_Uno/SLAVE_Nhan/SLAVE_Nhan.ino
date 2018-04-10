@@ -1,5 +1,11 @@
 
 
+//http://arduino.vn
+//https://github.com/NickChungVietNam/transmit_class
+// xem hướng dẫn trong tài liệu kèm theo
+
+
+
 
 //// CODE này dành cho arduino uno , (cấp dữ liệu vào chân RX )
 // test cổng TX0 arduino mega thì nối RX  uno với TX0 

@@ -1,5 +1,7 @@
 
 //http://arduino.vn
+//https://github.com/NickChungVietNam/transmit_class
+// xem hướng dẫn trong tài liệu kèm theo
 
 // test hàm nhận dữ liệu không cần Serial
 // Mình đã xây dựng thư viện theo cách này ^^

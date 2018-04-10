@@ -1,5 +1,11 @@
 
 
+//http://arduino.vn
+//https://github.com/NickChungVietNam/transmit_class
+// xem hướng dẫn trong tài liệu kèm theo
+
+
+
 #include "TRANSMIT_CLASS.h"
 //Truyền 1 hàm đọc 1 byte dữ liệu 
 uint8_t RR() { return (uint8_t) Serial.read();   }
