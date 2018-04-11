@@ -68,7 +68,7 @@ String NAME;
 boolean the_same_name;
   public:
   static uint8_t MAX_LENGTH_STRING;/// tìm chiều dài lớn nhất có thể có của chuỗi tên
-  //( dùng để kiểm tra ở hàm ...)
+  //( dùng để kiểm tra ở hàm GET_DATA())
   static uint16_t count_value;// đếm số biến
 
   DATA_TRANSMIT_PACKET(String name_){
