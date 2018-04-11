@@ -5,6 +5,7 @@
 //http://github.com/NickChungVietNam/
 //http://arduino.vn/users/nick-chung/
 //https://github.com/NickChungVietNam/transmit_class
+//http://arduino.vn/tutorial/5897-thu-vien-truyen-du-lieu-bat-ky-byte-long-float-double-theo-goi-tin-cho-arduino
 // xem hướng dẫn trong tài liệu kèm theo
 
 
