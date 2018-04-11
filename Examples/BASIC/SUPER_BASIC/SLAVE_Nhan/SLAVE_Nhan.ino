@@ -75,7 +75,7 @@ void loop() {
 
       error_get= Slave.GET_DATA(
                 5000,A,//timeout = 5 giây, Lấy gói A
-                (double)(0),//  biến kiểu (int) , 
+                (double)(0),//  biến kiểu (double) , 
                 1,//số lượng  (1)
                  &i0// liệt kê vào
                 );
