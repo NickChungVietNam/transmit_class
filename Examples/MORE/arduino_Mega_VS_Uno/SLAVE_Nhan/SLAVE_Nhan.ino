@@ -100,7 +100,7 @@ void loop() {
 /*
 // Tên gói tin giống với gói gửi ("abc")
 // số lượng biến liệt kê bằng với số lượng của gói gửi (4)
-// kiểu dữ liệu giống với gói gửi (int)
+// kiểu dữ liệu giống với gói gửi (uint8_t)
 //timeout là thời gian đợi lâu nhất 
 
 */

@@ -92,7 +92,7 @@ String text_st="I'm master 0 ";
 //Xuất ra cổng TX0 trên arduino mega
    Master0.SEND_DATA_ARRAY(
       A, //gửi gói tin A 
-      (uint8_t)(0), // mảng kiểu (char)  
+      (uint8_t)(0), // mảng kiểu (uint8_t)  
       size_,// kích thước cần gửi
       text_array_buffer // mảng cần gửi
     );
@@ -104,7 +104,7 @@ String text_st="I'm master 0 ";
 //Xuất ra cổng TX1 trên arduino mega
    Master1.SEND_DATA_ARRAY(
       A, //gửi gói tin A 
-      (uint8_t)(0), // mảng kiểu (char)  
+      (uint8_t)(0), // mảng kiểu (uint8_t)  
       size_,// kích thước cần gửi
       text_array_buffer // mảng cần gửi
     );
@@ -121,7 +121,7 @@ String text_st="I'm master 0 ";
 // kiểu dữ liệu của mảng uin8_t (khi dùng để gửi dạng binary)
 // số lượng mảng cho mỗi gói tin phải = 1 
 // kích thước gói (PAYLOAD) không quá 65535 byte 
-//PAYLOAD = (số lượng phần tử) * (cỡ của biến ) = 4 * (sizeof(int))= 8 byte
+//PAYLOAD = (số lượng phần tử) * (cỡ của biến ) = 4 * (sizeof(uint8_t))=
 
 
 kiểu (byte ,uint8_t , int8_t, char , unsigned char  ) sizeof=1 byte

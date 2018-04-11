@@ -71,7 +71,7 @@ String text_st="Hello I'm master, Can i talk with you ? ";
 
 Master.SEND_DATA_ARRAY(
       A, //gửi gói tin A ("abc")
-      (uint8_t)(0), // mảng kiểu (char)  
+      (uint8_t)(0), // mảng kiểu (uint8_t)  
       size_,// kích thước cần gửi
       text_array_buffer // mảng cần gửi
     );
