@@ -93,7 +93,7 @@ void loop() {
      error_get= Nhan.GET_DATA(
                 1000,A,//timeout = 1 giây, Lấy gói A
                 (int)(0),//  biến kiểu (int) , 
-                4,//số lượng  (3)
+                4,//số lượng  (4)
                  &aa0, &aa1, &aa2 , &aa3// liệt kê vào
                 );
 
