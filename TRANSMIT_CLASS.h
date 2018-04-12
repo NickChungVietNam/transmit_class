@@ -68,7 +68,7 @@ String NAME;
 boolean the_same_name;
   public:
   static uint8_t MAX_LENGTH_STRING;/// tìm chiều dài lớn nhất có thể có của chuỗi tên
-  //( dùng để kiểm tra ở hàm GET_DATA())
+  //( dùng để kiểm tra ở hàm ...)
   static uint16_t count_value;// đếm số biến
 
   DATA_TRANSMIT_PACKET(String name_){
@@ -213,12 +213,16 @@ uint8_t i=0;
     return the_same;
 }
 
-boolean check_array_in_string(String a, uint8_t array_[],uint16_t length_array){
+boolean check_array_bang_string(String a, uint8_t array_[],uint16_t length_array){
   
-  // kiểm tra mảng tên và chuỗi tên giống nhau hay không
+                  //kiểm tra độ dài tên có bằng nhau hay không (tiết kiệm thời gian)
+                
   if(length_array!= a.length()){
     return false;
   }
+
+  // kiểm tra mảng tên và chuỗi tên giống nhau hay không
+
   for(uint16_t i=0; i<length_array ; i++){
     if( (char)(array_[i]) != a.charAt(i)){
       return false;
@@ -338,17 +342,15 @@ uint32_t time_start_wait=millis();
                         DATA_TRANSMIT_PACKET *vl_x=array_[i];
 
                           
-                if( (*vl_x).get_length() == length_name){
-                  //kiểm tra độ dài tên có bằng nhau hay không (tiết kiệm thời gian)
-                     String name_=(*vl_x).get_string();
-                     if( check_array_in_string(name_,BUFFER_CHECK,length_name)){
+                    String name_=(*vl_x).get_string();
+                     if( check_array_bang_string(name_,BUFFER_CHECK,length_name)){
                       // kiểm tra tên có khớp không
                       (*vl_x).set_true();
                 
                       //Serial.println(name_ ); 
                       return LISTEN_OK;//không có bất cứ lỗi tìm tên nào
                         }
-                }
+              
              }
           return ERROR_NAME_NOT_TRUE;///Đã tìm được tên nhưng Tên không giống với bất kỳ tên nào đã khai báo
 
@@ -479,12 +481,15 @@ template <class Type> void FindMax(Type c,  ...)
 template <class Type>  uint8_t TRANSMIT_CLASS::GET_DATA(uint32_t time_out,DATA_TRANSMIT_PACKET x ,Type c,uint16_t Count,... ){
   
    // uint16_t _count_vl=Count;//số lượng biến lưu
-  va_list ap;
+  
+
+  if(x.is_the_same_name()){//đây là tên dược được đánh dấu lựa chọn
+
+    va_list ap;
   va_start(ap,Count);
  
  boolean END=false;
 
-  if(x.is_the_same_name()){//đây là tên dược được đánh dấu lựa chọn
      uint32_t time_start_wait=millis();
     boolean FOUND_PAYLOAD_LEGNTH=false;// tìm được độ dài của gói dữ liệu
     
