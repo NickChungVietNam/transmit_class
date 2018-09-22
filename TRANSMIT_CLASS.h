@@ -1,4 +1,35 @@
 #include <stdarg.h>
+
+/*
+// Tương lai: Cần sửa lại hàm checksum sang ít nhất 1 trong 2 cách sau :
+// hàm băm 1 byte đơn giản
+uint8_t GetCheckSum(uint8_t* cmdBuf, int size)
+{
+  uint8_t checkSum = 0; 
+  for(int i = 0; i < size; ++i)
+  {
+    checkSum ^= *(cmdBuf++);  
+  } 
+  return checkSum;
+}
+
+ // hàm băm 4 byte
+ 
+int32_t hashCode (String str){
+  int32_t  hash = 0;
+    if (str.length() == 0) return hash;
+    
+    for (uint16_t i = 0; i < str.length(); i++) {
+        uint8_t char_i= (uint8_t)str.charAt(i);
+        hash = ((hash<<5)-hash)+char_i;
+        hash = hash & hash; // Convert to 32bit integer
+    }
+    return hash;
+}
+// hoặc MD5 ,SHA256,.vvv
+*/
+
+
 // 
 //Thư viện NÉN-GIẢI NÉN trong truyền dẫn dữ liệu
  // Người viết : Phùng Thái Sơn -phungthaison96@gmail.com
