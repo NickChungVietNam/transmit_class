@@ -1,7 +1,7 @@
 #include <stdarg.h>
 
 /*
-// Tương lai: Cần sửa lại hàm checksum sang ít nhất 1 trong 2 cách sau :
+// (add 2/9/2018 )Tương lai: Cần sửa lại hàm checksum sang ít nhất 1 trong 2 cách sau :
 // hàm băm 1 byte đơn giản
 uint8_t GetCheckSum(uint8_t* cmdBuf, int size)
 {
